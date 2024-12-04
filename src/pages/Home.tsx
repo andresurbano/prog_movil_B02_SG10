@@ -1,20 +1,24 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonItem, IonLabel } from '@ionic/react';
-import './Home.css'; // Optional: Add styles for your home page
+import { 
+  IonContent, 
+  IonHeader, 
+  IonPage, 
+  IonTitle, 
+  IonToolbar 
+} from '@ionic/react';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Home</IonTitle>
+          <IonTitle>Inicio</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">
-        <IonItem>
-          <IonLabel>Welcome to the App!</IonLabel>
-        </IonItem>
-        <IonButton expand="full" routerLink="/login">Go to Login</IonButton>
+      <IonContent fullscreen>
+        <div className="ion-padding">
+          <h1>Bienvenido a la aplicación</h1>
+        </div>
       </IonContent>
     </IonPage>
   );
